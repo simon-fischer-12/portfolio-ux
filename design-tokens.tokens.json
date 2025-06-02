@@ -1,0 +1,226 @@
+{
+  "font": {
+    "portfolio": {
+      "h1": {
+        "type": "custom-fontStyle",
+        "value": {
+          "fontSize": 64,
+          "textDecoration": "none",
+          "fontFamily": "Kontrapunkt Miki",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontStretch": "normal",
+          "letterSpacing": 1.28,
+          "lineHeight": 83.2,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "none"
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:1fe5545e548cb952a3e72f5f7dde16d5cb604a84,",
+            "exportKey": "font"
+          }
+        }
+      },
+      "h2-regular": {
+        "type": "custom-fontStyle",
+        "value": {
+          "fontSize": 32,
+          "textDecoration": "none",
+          "fontFamily": "Kontrapunkt Miki",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontStretch": "normal",
+          "letterSpacing": 0,
+          "lineHeight": 44.8,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "none"
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:2aaae3bc20f121a9c879fda1f079d269a1bccb2b,",
+            "exportKey": "font"
+          }
+        }
+      },
+      "h2-bold": {
+        "type": "custom-fontStyle",
+        "value": {
+          "fontSize": 32,
+          "textDecoration": "none",
+          "fontFamily": "Kontrapunkt Miki",
+          "fontWeight": 700,
+          "fontStyle": "normal",
+          "fontStretch": "normal",
+          "letterSpacing": 0,
+          "lineHeight": 44.8,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "none"
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:69be9fe6f9b006900d45ecb73651d449ab6ccf29,",
+            "exportKey": "font"
+          }
+        }
+      },
+      "h3": {
+        "type": "custom-fontStyle",
+        "value": {
+          "fontSize": 24,
+          "textDecoration": "none",
+          "fontFamily": "Kontrapunkt Miki",
+          "fontWeight": 700,
+          "fontStyle": "normal",
+          "fontStretch": "normal",
+          "letterSpacing": 0,
+          "lineHeight": 36,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "none"
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:8f00789372ad67f0f4283df2e9e89d137f2eab2b,",
+            "exportKey": "font"
+          }
+        }
+      },
+      "body-xl-semibold": {
+        "type": "custom-fontStyle",
+        "value": {
+          "fontSize": 18,
+          "textDecoration": "none",
+          "fontFamily": "Inter",
+          "fontWeight": 600,
+          "fontStyle": "normal",
+          "fontStretch": "normal",
+          "letterSpacing": 0,
+          "lineHeight": 27,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "none"
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:ff1ce41348d06f5fca4c0a0f128b21afc3850e1a,",
+            "exportKey": "font"
+          }
+        }
+      },
+      "body-xl-regular": {
+        "type": "custom-fontStyle",
+        "value": {
+          "fontSize": 18,
+          "textDecoration": "none",
+          "fontFamily": "Inter",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontStretch": "normal",
+          "letterSpacing": 0,
+          "lineHeight": 27,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "none"
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:623068c6d97138c4edc07618dfbd4d770257d510,",
+            "exportKey": "font"
+          }
+        }
+      },
+      "body-l-regular": {
+        "type": "custom-fontStyle",
+        "value": {
+          "fontSize": 16,
+          "textDecoration": "none",
+          "fontFamily": "Inter",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontStretch": "normal",
+          "letterSpacing": 0,
+          "lineHeight": 24,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "none"
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:fe006e8cb7accdf77a19c11b0e4e3931ca7ba287,",
+            "exportKey": "font"
+          }
+        }
+      },
+      "body-l-medium": {
+        "type": "custom-fontStyle",
+        "value": {
+          "fontSize": 16,
+          "textDecoration": "none",
+          "fontFamily": "Inter",
+          "fontWeight": 500,
+          "fontStyle": "normal",
+          "fontStretch": "normal",
+          "letterSpacing": 0,
+          "lineHeight": 24,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "none"
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:7ffeef3a3834fdcdbac2016bf031a2cb76c05217,",
+            "exportKey": "font"
+          }
+        }
+      },
+      "caption_02_medium": {
+        "type": "custom-fontStyle",
+        "value": {
+          "fontSize": 14,
+          "textDecoration": "none",
+          "fontFamily": "Inter",
+          "fontWeight": 500,
+          "fontStyle": "normal",
+          "fontStretch": "normal",
+          "letterSpacing": 0,
+          "lineHeight": 21,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "none"
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:d33bbec5d1a069d938a9356a892ce386383cc789,",
+            "exportKey": "font"
+          }
+        }
+      },
+      "caption_03_regular": {
+        "type": "custom-fontStyle",
+        "value": {
+          "fontSize": 12,
+          "textDecoration": "none",
+          "fontFamily": "Inter",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontStretch": "normal",
+          "letterSpacing": 0,
+          "lineHeight": 18,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "none"
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:8b216519e1fae1fe7d8229dad915ded83fd9f7a2,",
+            "exportKey": "font"
+          }
+        }
+      }
+    }
+  }
+}
