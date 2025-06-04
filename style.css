@@ -17,9 +17,11 @@ a:link {
   -webkit-tap-highlight-color: transparent;
 }
 
+
 /* FORCE SCROLLBAR TO PREVENT LAYOUT SHIFT */
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 
@@ -75,7 +77,6 @@ html {
 
 /* HEADER COMPONENTS */
 .main-header-home {
-  color: var(--neutral-900);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,6 +100,27 @@ html {
   @media screen and (max-width: 800px) {
     margin-bottom: 32px;
   }
+}
+
+/* Slogan section styles */
+.slogan-text {
+  color: var(--neutral-300);
+  margin-bottom: 6px;
+  font-family: 'Kontrapunkt Miki', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0;
+  @media screen and (max-width: 800px) {
+    font-size: 18px;
+    line-height: 130%;
+  }
+}
+
+.slogan-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #7AFF9F, white);
 }
 
 /* PROJECT GRID */
@@ -329,6 +351,9 @@ html {
   width: 100%;
   border: none;
   margin-bottom: 80px;
+  @media screen and (max-width: 800px) {
+    margin-bottom: 48px;
+  }
 }
 
 /* PROJECT INTRO */
@@ -342,6 +367,10 @@ html {
   font-size: 32px;
   line-height: 44.8px;
   letter-spacing: 0;
+  @media screen and (max-width: 800px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 /* HERO IMAGE */
@@ -359,6 +388,9 @@ html {
     height: auto;
     aspect-ratio: 1320/650;
   }
+  @media screen and (max-width: 800px) {
+    aspect-ratio: 1/1;
+  }
 }
 
 /* SCOPE AND CHALLENGES SECTION */
@@ -368,6 +400,11 @@ html {
   margin: 0 auto;
   display: flex;
   gap: 80px;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 24px;
+  }
 }
 
 .scope-challenges__frame {
@@ -381,6 +418,11 @@ html {
   flex-direction: column;
   gap: 24px;
   flex: 1;
+  @media screen and (max-width: 800px) {
+    height: auto;
+    margin-top: 0px;
+    padding: 24px;
+  }
 }
 
 .scope-challenges__title {
@@ -391,6 +433,10 @@ html {
   line-height: 44.8px;
   letter-spacing: 0;
   color: var(--neutral-900);
+  @media screen and (max-width: 800px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .scope-challenges__text {
@@ -447,7 +493,7 @@ html {
   font-size: 32px;
   font-weight: 400;
   line-height: 44.8px;
-  color: var(--neutral-400);
+  color: var(--neutral-300);
   text-decoration: none;
   transition: color 0.3s ease;
   display: flex;
@@ -469,7 +515,7 @@ html {
 
 .nav-text {
   display: block;
-}
+  }
 
 @media screen and (max-width: 800px) {
   .nav-text {
@@ -487,15 +533,17 @@ html {
     top: 24px;
     right: 24px;
     z-index: 100;
+    color: var(--neutral-300);
   }
 }
 
+
 .main-nav__link:hover {
-  color: var(--neutral-900);
+  color: var(--neutral-300);
 }
 
 .main-nav__link--active {
-  color: var(--neutral-900);
+  color: var(--neutral-50);
 }
 
 /* SECTION */
@@ -513,6 +561,9 @@ html {
   width: 100%;
   margin: 64px 0;
   color: var(--neutral-900);
+  @media screen and (max-width: 800px) {
+    margin: 24px 0;
+  }
 }
 
 .section-header h2 {
@@ -533,6 +584,11 @@ html {
   justify-content: space-between;
   align-items: baseline;
   margin: 64px 0;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px 0;
+  }
 }
 
 .section-header-p h2 {
@@ -542,6 +598,10 @@ html {
   line-height: 44.8px;
   letter-spacing: 0;
   color: var(--neutral-900);
+  @media screen and (max-width: 800px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .section-header-p p {
@@ -551,29 +611,43 @@ html {
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .section-header-end {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin: 32px 0;
 }
 
-.section-header-end h2:first-child {
+.section-header-end h2 {
   font-family: 'Kontrapunkt Miki', sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44.8px;
   letter-spacing: 0;
   color: var(--neutral-900);
+  @media screen and (max-width: 800px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
-.section-header-end .title-group {
+.section-header-end .go-up-button {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: transform 300ms ease-in-out;
+}
+
+.section-header-end .go-up-button:hover {
+  transform: translateY(-4px);
 }
 
 /* SECTION PLACEHOLDER */
@@ -602,36 +676,101 @@ html {
   color: var(--neutral-900);
 }
 
-/* INSOLES SECTION */
-.insoles-section {
-  width: 100%;
-  aspect-ratio: 1320/580;
-  margin-top: 80px;
-  position: relative;
-  background-color: var(--neutral-50);
-  background-image: url('assets/images/Insole_scheme.webp');
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  }
 
-.insoles-section__heading {
-  position: relative;
-  margin-left: 50%;
-  padding-left: 40px;
-  color: var(--neutral-900);
-}
-
+/* SECTION IMAGE */
 .section-image {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (max-width: 1720px) {
-    width: 100%;
-    height: auto;
-    aspect-ratio: auto;
+  margin: 0 auto;
+  border-radius: var(--radius-L);
+}
+
+/* HORIZONTAL SCROLL SECTION */
+.projects-scroll {
+  height: 300px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  overflow-x: auto;
+  margin-bottom: 160px;
+}
+
+.projects-scroll__item {
+  position: relative;
+  min-width: 392px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius-L);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  @media screen and (max-width: 800px) {
+    min-width: 300px;
+    max-width: calc(100% - 32px);
   }
- }
+}
+
+.projects-scroll__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.projects-scroll__item:hover::before {
+  transform: scale(1.07);
+}
+
+.projects-scroll__item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 152px;
+  background: linear-gradient(to top, black 0%, transparent 100%);
+  opacity: 1;
+  border-bottom-left-radius: var(--radius-L);
+  border-bottom-right-radius: var(--radius-L);
+  z-index: 1;
+}
+
+.projects-scroll__item-title {
+  position: absolute;
+  bottom: 64px;
+  left: 32px;
+  right: 32px;
+  color: var(--neutral-50);
+  margin: 0;
+  z-index: 2;
+  font-family: 'Kontrapunkt Miki', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+}
+
+.projects-scroll__item-subtitle {
+  position: absolute;
+  top: calc(100% - 64px);
+  left: 32px;
+  right: 32px;
+  color: var(--neutral-50);
+  margin: 0;
+  z-index: 2;
+  font-family: 'Kontrapunkt Miki', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0;
+}
