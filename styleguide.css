@@ -49,31 +49,31 @@
   --radius-L: 16px;
 
   /* Spacing tokens */
-  --space-2xs: 2px;    /* 0.25XL */
-  --space-xs: 4px;     /* 0.5XL */
-  --space-s: 8px;      /* XS */
-  --space-m: 12px;     /* M */
-  --space-l: 16px;     /* L */
-  --space-xl: 24px;    /* XL */
-  --space-2xl: 32px;   /* 2XL */
-  --space-3xl: 40px;   /* 3XL */
-  --space-4xl: 48px;   /* 4XL */
-  --space-5xl: 56px;   /* 5XL */
-  --space-6xl: 64px;   /* 6XL */
-  --space-7xl: 72px;   /* 7XL */
-  --space-8xl: 80px;   /* 8XL */
-  --space-9xl: 88px;   /* 9XL */
-  --space-10xl: 96px;  /* 10XL */
-  --space-11xl: 104px; /* 11XL */
-  --space-12xl: 112px; /* 12XL */
-  --space-13xl: 120px; /* 13XL */
-  --space-14xl: 128px; /* 14XL */
-  --space-15xl: 136px; /* 15XL */
-  --space-16xl: 144px; /* 16XL */
-  --space-17xl: 152px; /* 17XL */
-  --space-18xl: 160px; /* 18XL */
-  --space-19xl: 168px; /* 19XL */
-  --space-20xl: 176px; /* 20XL */
+  --space-2xs: 0.125rem;    /* 2px */
+  --space-xs: 0.25rem;      /* 4px */
+  --space-s: 0.5rem;        /* 8px */
+  --space-m: 0.75rem;       /* 12px */
+  --space-l: 1rem;          /* 16px */
+  --space-xl: 1.5rem;       /* 24px */
+  --space-2xl: 2rem;        /* 32px */
+  --space-3xl: 2.5rem;      /* 40px */
+  --space-4xl: 3rem;        /* 48px */
+  --space-5xl: 3.5rem;      /* 56px */
+  --space-6xl: 4rem;        /* 64px */
+  --space-7xl: 4.5rem;      /* 72px */
+  --space-8xl: 5rem;        /* 80px */
+  --space-9xl: 5.5rem;      /* 88px */
+  --space-10xl: 6rem;       /* 96px */
+  --space-11xl: 6.5rem;     /* 104px */
+  --space-12xl: 7rem;       /* 112px */
+  --space-13xl: 7.5rem;     /* 120px */
+  --space-14xl: 8rem;       /* 128px */
+  --space-15xl: 8.5rem;     /* 136px */
+  --space-16xl: 9rem;       /* 144px */
+  --space-17xl: 9.5rem;     /* 152px */
+  --space-18xl: 10rem;      /* 160px */
+  --space-19xl: 10.5rem;    /* 168px */
+  --space-20xl: 11rem;      /* 176px */
 }
 
 /* Font Styles */
