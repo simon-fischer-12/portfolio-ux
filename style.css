@@ -22,7 +22,8 @@ a:link {
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
-}
+  font-size: 16px;
+  }
 
 
 /* Main breakpoints:
@@ -32,6 +33,29 @@ html {
 */
 
 /* LAYOUT CONTAINERS */
+
+.spacer-xl {
+  height: 160px;
+  @media screen and (max-width: 800px) {
+    height: 48px;
+  }
+  }
+
+.spacer-l {
+  height: 72px;
+  @media screen and (max-width: 800px) {
+    height: 32px;
+  }
+  }
+
+.spacer-m {
+  height: 32px;
+  @media screen and (max-width: 800px) {
+    height: 16px;
+  }
+  }
+
+
 
 /* MAIN CONTAINER */
 .main-container {
@@ -502,8 +526,8 @@ html {
 
 .nav-icon {
   display: none;
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius-M);
   background-color: white;
@@ -559,12 +583,9 @@ html {
 /* SECTION COMPONENTS */
 .section-header {
   width: 100%;
-  margin: 64px 0;
+  margin: 24px 0;
   color: var(--neutral-900);
-  @media screen and (max-width: 800px) {
-    margin: 24px 0;
   }
-}
 
 .section-header h2 {
   font-family: 'Kontrapunkt Miki', sans-serif;
@@ -573,8 +594,11 @@ html {
   line-height: 44.8px;
   letter-spacing: 0;
   @media screen and (max-width: 800px) {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding-right: 16px;
   }
 }
 
@@ -583,11 +607,11 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 64px 0;
+  margin: 4rem 0;
   @media screen and (max-width: 800px) {
     flex-direction: column;
     gap: 24px;
-    margin: 32px 0;
+    margin: 2rem 0;
   }
 }
 
@@ -599,7 +623,7 @@ html {
   letter-spacing: 0;
   color: var(--neutral-900);
   @media screen and (max-width: 800px) {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
   }
 }
@@ -615,7 +639,7 @@ html {
     width: 100%;
     font-size: 16px;
     line-height: 24px;
-  }
+    }
 }
 
 .section-header-end {
@@ -684,8 +708,7 @@ html {
   height: auto;
   object-fit: cover;
   margin: 0 auto;
-  border-radius: var(--radius-L);
-}
+  }
 
 /* HORIZONTAL SCROLL SECTION */
 .projects-scroll {
