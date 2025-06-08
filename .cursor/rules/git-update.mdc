@@ -3,14 +3,14 @@ description:
 globs: 
 alwaysApply: false
 ---
-push all changes to github
-git commmit name is current date
+update all files from project folder to online repository
 
-When using git commit, the commit message should be the current date in format DD.MM.YYYY.
+When using git commit, the commit message should be the current date in format YYYY_MM_DD_XXX where XXX is current version.
 
 Example:
 ```bash
-git commit -m "23.03.2024"
-```
+git commit -m "2025_06_08_001"
 
-This rule ensures consistent commit naming based on when changes were made.
+
+
+```
