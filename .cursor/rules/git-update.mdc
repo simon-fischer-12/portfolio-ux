@@ -5,3 +5,12 @@ alwaysApply: false
 ---
 push all changes to github
 git commmit name is current date
+
+When using git commit, the commit message should be the current date in format DD.MM.YYYY.
+
+Example:
+```bash
+git commit -m "23.03.2024"
+```
+
+This rule ensures consistent commit naming based on when changes were made.
