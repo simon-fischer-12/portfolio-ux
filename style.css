@@ -755,3 +755,16 @@ html {
   line-height: 150%;
   letter-spacing: 0;
 }
+
+.wip-message-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  padding: var(--space-160);
+  background-color: var(--neutral-50);
+  border-radius: var(--radius-L);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+}
