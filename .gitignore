@@ -3,6 +3,7 @@ Thumbs.db
 .vscode/
 *.log
 node_modules/ 
+test/
 
 # Image source files
 assets/images/.PNG/
