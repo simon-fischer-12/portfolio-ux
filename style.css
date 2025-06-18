@@ -105,10 +105,9 @@ html {
 
 /* Slogan section styles */
 .slogan-text {
-  color: var(--neutral-300);
   margin-bottom: 6px;
   font-family: 'Kontrapunkt Miki', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: var(--font-size-3XL);
   line-height: 36px;
   letter-spacing: 0;
@@ -299,6 +298,8 @@ html {
   justify-content: space-between;
   position: relative;
   margin: 80px 0 16px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     height: auto;
@@ -306,6 +307,10 @@ html {
     gap: 24px;
     margin: 24px 0 16px 0;
   }
+}
+
+.project-header.is-loaded {
+  opacity: 1;
 }
 
 /* PROJECT TITLE AND DETAILS */
@@ -498,7 +503,7 @@ html {
   font-size: var(--font-size-4XL);
   font-weight: 400;
   line-height: 44.8px;
-  color: var(--neutral-300);
+  color: var(--neutral-50);
   text-decoration: none;
   transition: color 0.3s ease;
   display: flex;
@@ -520,7 +525,13 @@ html {
 
 .nav-text {
   display: block;
-  }
+  color: var(--neutral-300);
+  transition: color 0.3s ease;
+}
+
+.nav-text:hover {
+  color: var(--neutral-900);
+}
 
 @media screen and (max-width: 768px) {
   .nav-text {
@@ -538,13 +549,13 @@ html {
     top: 24px;
     right: 24px;
     z-index: 100;
-    color: var(--neutral-300);
+    color: var(--neutral-50) !important;
   }
 }
 
 
 .main-nav__link:hover {
-  color: var(--neutral-300);
+  color: var(--neutral-900);
 }
 
 .main-nav__link--active {
@@ -767,4 +778,13 @@ html {
   background-color: var(--neutral-50);
   border-radius: var(--radius-L);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+}
+
+img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+img.is-loaded {
+  opacity: 1;
 }
