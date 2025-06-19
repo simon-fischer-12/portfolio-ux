@@ -167,6 +167,7 @@ html {
   border-radius: var(--radius-L);
   transition: all 0.3s ease-in-out;
   overflow: hidden;
+  opacity: 0;
 }
 
 .thumbnail-home::before {
@@ -213,6 +214,7 @@ html {
   background-position: center;
   border-radius: var(--radius-L);
   overflow: hidden;
+  opacity: 0;
 }
 
 .thumbnail-home-dark::before {
@@ -492,7 +494,7 @@ html {
 }
 
 /* NAVIGATION */
-.main-nav {
+.nav-main {
   display: flex;
   gap: 40px;
   align-items: center;
@@ -503,11 +505,26 @@ html {
   font-size: var(--font-size-4XL);
   font-weight: 400;
   line-height: 44.8px;
-  color: var(--neutral-50);
+  color: var(--neutral-300);
   text-decoration: none;
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
+}
+
+.home-nav__link {
+  font-family: 'Kontrapunkt Miki', sans-serif;
+  font-size: var(--font-size-4XL);
+  font-weight: 400;
+  line-height: 44.8px;
+  color: var(--neutral-300);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .nav-icon {
@@ -787,4 +804,19 @@ img {
 
 img.is-loaded {
   opacity: 1;
+}
+
+.thumbnail-home.is-loaded, .thumbnail-home-dark.is-loaded {
+  opacity: 1;
+}
+
+/* Contact elements responsive styles */
+@media screen and (max-width: 768px) {
+  h2[id="bottom"], h2 a[href*="linkedin"] {
+    font-family: 'Kontrapunkt Miki', sans-serif;
+    font-size: var(--font-size-3XL);
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
 }
