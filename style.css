@@ -819,4 +819,9 @@ img.is-loaded {
     line-height: 36px;
     letter-spacing: 0;
   }
+  
+  #copyright {
+    font-size: var(--font-size-XL);
+    line-height: 27px;
+  }
 }
