@@ -32,20 +32,7 @@
 }
 
 :root {
-  /* Neutral colors from lightest to darkest */
-  --neutral-50: #F2F2F3;
-  --neutral-100: #CBCBCC;
-  --neutral-200: #B7B7B8;
-  --neutral-300: #98999A;
-  --neutral-400: #6F6F71;
-  --neutral-500: #4C4C4D;
-  --neutral-600: #333333;
-  --neutral-700: #262627;
-  --neutral-800: #1F1F1F;
-  --neutral-900: #121212;
-
-
-
+  /* TYPOGRAPHY*/
   /* Font sizes */
   --font-size-S: 0.75rem;    /* 12px */
   --font-size-M: 0.875rem;   /* 14px */
@@ -58,7 +45,26 @@
   --font-size-6XL: 4rem;     /* 64px */
 
 
-  /* Border radius */
+  /* COLORS */
+  /* NEUTRALS */
+  --neutral-50: #F2F2F3;
+  --neutral-100: #CBCBCC;
+  --neutral-200: #B7B7B8;
+  --neutral-300: #98999A;
+  --neutral-400: #6F6F71;
+  --neutral-500: #4C4C4D;
+  --neutral-600: #333333;
+  --neutral-700: #262627;
+  --neutral-800: #1F1F1F;
+  --neutral-900: #121212;
+
+  /* PROJECT THEMES */
+  --ridemetric: #fe5915;
+  --heca: #4DB2A6; 
+
+
+  /* SPACING */
+    /* Border radius */
   --radius-S: 8px;
   --radius-M: 12px;
   --radius-L: 16px;
