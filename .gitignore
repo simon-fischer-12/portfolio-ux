@@ -4,6 +4,7 @@ Thumbs.db
 *.log
 node_modules/ 
 test/
+.cursor/
 
 # Image source files
 assets/images/.PNG/
