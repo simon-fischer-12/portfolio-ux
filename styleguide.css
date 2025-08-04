@@ -54,9 +54,9 @@
   --neutral-400: #6F6F71;
   --neutral-500: #4C4C4D;
   --neutral-600: #333333;
-  --neutral-700: #262627;
-  --neutral-800: #1F1F1F;
-  --neutral-900: #121212;
+  --neutral-700: #1F1F1F;
+  --neutral-800: #121212;
+  
 
   /* PROJECT THEMES */
   --ridemetric: #fe5915;
@@ -128,7 +128,7 @@
 /* Font Styles */
 .H1-regular {
   font-family: 'Kontrapunkt Miki', sans-serif;
-  font-size: 64px;
+  font-size: var(--font-size-6XL);
   font-weight: 400;
   line-height: 83.2px;
   letter-spacing: 1.28px;
@@ -137,7 +137,7 @@
 .H2-bold {
   font-family: 'Kontrapunkt Miki', sans-serif;
   font-weight: 700; /* bold */
-  font-size: 32px;
+  font-size: var(--font-size-4XL);
   line-height: 44.8px;
   letter-spacing: 0;
 }
@@ -145,7 +145,7 @@
 .H2-regular {
   font-family: 'Kontrapunkt Miki', sans-serif;
   font-weight: 400; /* regular */
-  font-size: 32px;
+  font-size: var(--font-size-4XL);
   line-height: 44.8px;
   letter-spacing: 0;
 }
@@ -153,7 +153,7 @@
 .H3-bold {
   font-family: 'Kontrapunkt Miki', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: var(--font-size-3XL);
   line-height: 36px;
   letter-spacing: 0;
 }
@@ -161,15 +161,23 @@
 .H3-regular {
   font-family: 'Kontrapunkt Miki', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: var(--font-size-3XL);
   line-height: 36px;
+  letter-spacing: 0;
+}
+
+.H4-regular {
+  font-family: 'Kontrapunkt Miki', sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-2XL);
+  line-height: 30px;
   letter-spacing: 0;
 }
 
 .Body-XL-semibold {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: var(--font-size-XL);
   line-height: 27px;
   letter-spacing: 0;
 }
@@ -177,7 +185,7 @@
 .Body-XL-regular {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--font-size-XL);
   line-height: 27px;
   letter-spacing: 0;
 }
@@ -185,7 +193,7 @@
 .Body-L-regular {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--font-size-L);
   line-height: 24px;
   letter-spacing: 0;
 }
@@ -193,7 +201,7 @@
 .Body-L-medium {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--font-size-L);
   line-height: 24px;
   letter-spacing: 0;
 }
@@ -201,7 +209,7 @@
 .Caption-02-medium {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--font-size-M);
   line-height: 21px;
   letter-spacing: 0;
 }
@@ -209,7 +217,7 @@
 .Caption-03-regular {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: var(--font-size-S);
   line-height: 18px;
   letter-spacing: 0;
 }
