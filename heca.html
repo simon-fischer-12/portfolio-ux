@@ -9,20 +9,25 @@
     <link rel="stylesheet" href="styleguide.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="top">
     <div class="main-container">
+
+
         <!-- HEADER NAVIGATION -->
-        <header class="main-header-home">
-          <h2>
-            <span class="H2-regular header-text">SZYMON FISCHER</span><span class="H2-regular header-text" style="color: var(--heca);">.</span>            
-          </h2>
+        <header class="header-main">
+         
+          <h2 class="H2-regular header-text">SZYMON FISCHER<span style="color: var(--heca);">.</span></h2>
+
           <nav class="nav-main">
-            <a href="index.html" class="main-nav__link">
-              <span class="nav-text">Projekty</span>
-              <img src="assets/icons/close.svg" alt="Close" class="nav-icon" style="opacity: 0.7;">
+            <a href="index.html">
+              <h2 class="H2-regular hover-color nav-desktop">Projekty</h2>
+              <img src="assets/icons/close.svg" alt="Close" class="nav-mobile" style="opacity: 0.7;">
             </a>
           </nav>
+
         </header>
+
 
         <!-- PROJECT HEADER -->
         <div class="project-header">
@@ -88,30 +93,48 @@
 
         <!-- END SECTION-->
         <section class="section-header-end" style="margin-top: var(--space-80);">
+
           <h2 class="H2-bold">Zobacz inne projekty:</h2>
           <a href="#top" class="go-up-button">
             <img src="assets/icons/arrow_upward.svg" alt="Arrow Up">
-            <h2 class="H2-bold nav-text">Do góry</h2>
+            <h2 class="H2-bold">Do góry</h2>
           </a>
+
         </section>
+
         <!-- CARAUSEL -->
         <section class="projects-scroll">
+
           <div class="projects-scroll__item" style="background-image: url('assets/thumbnails/ridemetric-thumbnail.webp');" onclick="window.location.href='ridemetric.html';">
             <h2 class="projects-scroll__item-title">RideMetric</h2>
             <p class="projects-scroll__item-subtitle">Aplikacja do pomiaru mocy dla kolarzy</p>
           </div>
           
-          <!--
-          <div class="projects-scroll__item" style="background-image: url('assets/thumbnails/Sportsense_hero_C001_crop_004.webp');">
-            <h2 class="projects-scroll__item-title">RideMetric</h2>
-            <p class="projects-scroll__item-subtitle">Aplikacja do pomiaru mocy dla kolarzy</p>
-          </div>
-          -->
         </section>
+
+        <!-- FOOTER -->
+        <footer id="bottom" class="footer-main">
+
+          <hr class="footer-divider">
+
+          <div class="footer-text">
+
+            <p class="H3-regular" style="color: var(--neutral-300)">Copyright 2025</p> <!-- TO DO: To w mobilu powinna iść również w lewy dolny róg, czyli chyba powinno być w kontenerze z "Behance"-->
+
+            <div class="H2-regular contact">
+                <h2>szymon.fischer@gmail.com</h2>
+                <h2 class="hover-color"><a href="https://www.linkedin.com/in/szymonfischer/" target="_blank">LinkedIn</a></h2>
+                <h2 class="hover-color"><a href="https://www.behance.net/s-fischer" target="_blank">Behance</a></h2>
+            </div>
+
+          </div>
+
+        </footer>
           
       </div>
+
   
-    </div>
+    </div> <!-- Koniec main-container -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html> 

@@ -73,7 +73,7 @@ html {
 
 
 /* HEADER COMPONENTS */
-.main-header-home {
+.header-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -492,18 +492,11 @@ html {
 /* NAVIGATION */
 .nav-main {
   display: flex;
-  gap: 40px;
-  align-items: center;
+  gap: var(--space-40);
+  justify-content: center;
 }
 
 .main-nav__link {
-  font-family: 'Kontrapunkt Miki', sans-serif;
-  font-size: var(--font-size-4XL);
-  font-weight: 400;
-  line-height: 44.8px;
-  color: var(--neutral-300);
-  text-decoration: none;
-  transition: color 0.3s ease;
   display: flex;
   align-items: center;
 }
@@ -523,11 +516,13 @@ html {
   }
 }
 
-.nav-icon {
+.nav-mobile {
   display: none;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
+  position: fixed;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: var(--neutral-50);
   border-radius: var(--radius-M);
   background-color: white;
   position: fixed;
@@ -536,43 +531,19 @@ html {
   z-index: 100;
 }
 
-.nav-text {
+.nav-desktop {
   display: block;
-  color: var(--neutral-300);
-  transition: color 0.3s ease;
-}
-
-.nav-text:hover {
-  color: var(--neutral-800);
 }
 
 @media screen and (max-width: 768px) {
-  .nav-text {
+  .nav-desktop {
     display: none;
   }
   
-  .nav-icon {
+
+  .nav-mobile {
     display: block;
   }
-
-  .main-nav__link {
-    width: 44px;
-    height: 44px;
-    position: fixed;
-    top: 24px;
-    right: 24px;
-    z-index: 100;
-    color: var(--neutral-50) !important;
-  }
-}
-
-
-.main-nav__link:hover {
-  color: var(--neutral-800);
-}
-
-.main-nav__link--active {
-  color: var(--neutral-50);
 }
 
 /* TEXT HOVER EFFECT */
@@ -625,6 +596,7 @@ html {
   font-size: var(--font-size-XL);
   line-height: 27px;
   letter-spacing: 0;
+  color: var(--neutral-400);
   @media screen and (max-width: 768px) {
     width: 100%;
     font-size: var(--font-size-L);
@@ -709,7 +681,6 @@ html {
   gap: 24px;
   align-items: flex-start;
   overflow-x: auto;
-  margin-bottom: 160px;
 }
 
 .projects-scroll__item {
@@ -817,24 +788,42 @@ img.is-loaded {
 }
 
 /* FOOTER */
-.footer {
+
+.footer-main {
+display: block;
+justify-content: center;
+width: auto;
+margin-top: var(--space-176);
+margin-bottom: var(--space-104);
+gap: var(--space-120);
+}
+
+
+.footer-text {
   display: flex;
   justify-content: space-between;
   align-items: last baseline;
-  margin-top: var(--space-176);
 }
 
 @media screen and (max-width: 768px) {
-  .footer {
+  .footer-text {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
   }
 }
 
+.footer-divider {
+  border: none;
+  height: 2px;
+  background: var(--neutral-100);
+  margin-bottom: var(--space-40)
+}
+
+
 /* FONT SUBCLASSES */
 
-.footer .H2-regular {
+.footer-text .H2-regular {
   font-family: 'Kontrapunkt Miki', sans-serif;
   font-weight: 400;
   font-size: var(--font-size-4XL);
@@ -843,13 +832,13 @@ img.is-loaded {
 }
 
 @media screen and (max-width: 768px) {
-  .footer .H2-regular {
+  .footer-text .H2-regular {
     font-size: var(--font-size-3XL);
     line-height: 36px;
   }
 }
 
-.footer .H3-regular {
+.footer-text .H3-regular {
   font-family: 'Kontrapunkt Miki', sans-serif;
   font-weight: 400;
   font-size: var(--font-size-3XL);
@@ -858,7 +847,7 @@ img.is-loaded {
 }
 
 @media screen and (max-width: 768px) {
-  .footer .H3-regular {
+  .footer-text .H3-regular {
     font-size: var(--font-size-2XL);
     line-height: 30px;
   }

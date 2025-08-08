@@ -9,20 +9,26 @@
     <link rel="stylesheet" href="styleguide.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main-container">
+
+
         <!-- HEADER NAVIGATION -->
-        <header class="main-header-home">
-            <h2>
-                <span class="H2-regular header-text">SZYMON FISCHER</span><span class="H2-regular header-text" style="color: var(--ridemetric);">.</span>            
-            </h2>
+        <header class="header-main">
+         
+            <h2 class="H2-regular header-text">SZYMON FISCHER<span style="color: var(--ridemetric);">.</span></h2>
+  
             <nav class="nav-main">
-                <a href="#bottom" class="home-nav__link">
-                  <span class="nav-text">Kontakt</span>
-                  <img src="assets/icons/close.svg" alt="Close" class="nav-icon" style="opacity: 0.7;">
-                </a>
-              </nav>
-        </header>
+              <a href="index.html">
+                <img src="assets/icons/close.svg" alt="Close" class="nav-mobile" style="opacity: 0.7;">
+              </a>
+              <a href="#bottom">
+                <h2 class="H2-regular hover-color nav-desktop">Kontakt</h2>              
+              </a>
+            </nav>
+  
+          </header>
 
 
         <!-- SLOGAN -->
@@ -52,11 +58,15 @@
             </div>
         </div>
               
-    
+        
     <!-- FOOTER -->
-    <div id="bottom" class="footer">
+    <footer id="bottom" class="footer-main">
 
-        <p class="H3-regular" style="color: var(--neutral-300)">Copyright 2025</p>        
+      <hr class="footer-divider">
+
+      <div class="footer-text">
+
+        <p class="H3-regular" style="color: var(--neutral-300)">Copyright 2025</p> <!-- TO DO: To w mobilu powinna iść również w lewy dolny róg, czyli chyba powinno być w kontenerze z "Behance"-->
 
         <div class="H2-regular contact">
             <h2>szymon.fischer@gmail.com</h2>
@@ -64,7 +74,9 @@
             <h2 class="hover-color"><a href="https://www.behance.net/s-fischer" target="_blank">Behance</a></h2>
         </div>
 
-    </div>
+      </div>
+
+    </footer>
 
 
   </div>
