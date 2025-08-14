@@ -18,12 +18,12 @@
         <header class="header-main">
          
           <a href="index.html">
-            <h2 class="H2-regular header-text">SZYMON FISCHER<span style="color: var(--ridemetric);">.</span></h2>
+            <h2 class="H3-regular">SZYMON FISCHER<span style="color: var(--heca);">.</span></h2>
           </a>
 
           <nav class="nav-main">
             <a href="index.html">
-              <h2 class="H2-regular hover-color nav-desktop">Projekty</h2>
+              <h2 class="H3-regular hover-color nav-desktop">Projekty</h2>
               <img src="assets/icons/close.svg" alt="Close" class="nav-mobile" style="opacity: 0.7;">
             </a>
           </nav>
@@ -34,10 +34,10 @@
         <!-- PROJECT HEADER -->
         <div class="project-header">
           <!-- PROJECT TITLE-->
-          <h1 class="H1 project-title" style="color: var(--heca);">Heca</h1>
+          <h1 class="H1-regular project-title" style="color: var(--heca);">Heca</h1>
 
           <!-- PROJECT DETAILS-->
-          <p class="Body-L-medium project-details">Klient: Fagum-Stomil<br />Rok: 2024<br />W zespole projektowym EXEON<br />Team lead: Adrianna Paśkiewicz</p>
+          <p class="Body-M-medium project-details">Klient: Fagum-Stomil<br />Rok: 2024<br />W zespole projektowym EXEON<br />Team lead: Adrianna Paśkiewicz</p>
         </div>
 
         <!-- UNDERLINE -->
@@ -46,9 +46,7 @@
         
           <!-- PROJECT INTRO -->
           <section class="project-intro">
-            <p>
-              Projekt strony internetowej e-commerce dla Hecy, nowej marki kaloszy dla dzieci i dorosłych. 
-            </p>
+            <h3 class="H3-regular">Projekt strony internetowej e-commerce dla Hecy, nowej marki kaloszy dla dzieci i dorosłych.</h3>            
           </section>   
 
       </div>
@@ -87,7 +85,7 @@
         
         <!-- SECTION  DESIGN SYSTEM-->
         <section class="section-header" style="margin-top: var(--space-80); margin-bottom: var(--space-32);" >
-          <h2 class="H2-bold">Design system</h2>
+          <h3>Design system</h3>
         </section>
         <img class="section-image" src="assets/images/heca-design-system-001.webp" alt="Insole Scheme">
 
@@ -96,47 +94,32 @@
         <!-- END SECTION-->
         <section class="section-header-end" style="margin-top: var(--space-80);">
 
-          <h2 class="H2-bold">Zobacz inne projekty:</h2>
-          <a href="#top" class="go-up-button">
+          <h3 class="H3-bold">Zobacz inne projekty:</h3>
+          <a href="#top" class="go-up">
             <img src="assets/icons/arrow_upward.svg" alt="Arrow Up">
-            <h2 class="H2-bold">Do góry</h2>
+            <h3 class="H3-bold desktop">Do góry</h3>
           </a>
 
         </section>
 
         <!-- CARAUSEL -->
-        <section class="projects-scroll">
+        <section class="projects-carausel-container">
 
-          <div class="projects-scroll__item" style="background-image: url('assets/thumbnails/ridemetric-thumbnail.webp');" onclick="window.location.href='ridemetric.html';">
-            <h2 class="projects-scroll__item-title">RideMetric</h2>
-            <p class="projects-scroll__item-subtitle">Aplikacja do pomiaru mocy dla kolarzy</p>
-          </div>
+          <div class="projects-carausel-card" style="background-image: url('assets/thumbnails/ridemetric-thumbnail.webp');" onclick="window.location.href='ridemetric.html';">
+            <div class="thumbnail-text">            
+              <h4 class="H3-bold">RideMetric</h4>
+              <p class="Body-M-medium">Aplikacja do pomiaru mocy dla kolarzy</p>
+            </div>
+          </div>          
           
         </section>
 
         <!-- FOOTER -->
-        <footer id="bottom" class="footer-main">
-
-          <hr class="footer-divider">
-
-          <div class="footer-text">
-
-            <p class="H3-regular" style="color: var(--neutral-300)">Copyright 2025</p> <!-- TO DO: To w mobilu powinna iść również w lewy dolny róg, czyli chyba powinno być w kontenerze z "Behance"-->
-
-            <div class="H2-regular contact">
-                <h2>szymon.fischer@gmail.com</h2>
-                <h2 class="hover-color"><a href="https://www.linkedin.com/in/szymonfischer/" target="_blank">LinkedIn</a></h2>
-                <h2 class="hover-color"><a href="https://www.behance.net/s-fischer" target="_blank">Behance</a></h2>
-            </div>
-
-          </div>
-
-        </footer>
+        <footer-main></footer-main>
           
-      </div>
-
-  
+      </div> <!-- Koniec project-container -->
     </div> <!-- Koniec main-container -->
+    <script src="footer-component.js" type="module"></script>
     <script src="script.js"></script>
   </body>
 </html> 
