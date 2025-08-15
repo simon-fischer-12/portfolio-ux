@@ -13,6 +13,64 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// COMPONENTS
+
+// HEADER
+class XSectionHeader extends HTMLElement {
+  static get observedAttributes() { return ['title', 'text']; }
+
+  connectedCallback() {
+    if (!this._initialized) {
+      this.innerHTML = `
+        <section class="section-header">
+          <div class="H3 H3-bold"></div>
+          <p class="Body-L Body-L-regular"></p>
+        </section>
+      `;
+      this._titleEl = this.querySelector('.H3-bold');
+      this._textEl = this.querySelector('p');
+      this._apply();
+      this._initialized = true;
+    }
+  }
+
+  attributeChangedCallback() {
+    this._apply();
+  }
+
+  get title() { return this.getAttribute('title') ?? ''; }
+  set title(v) { this.setAttribute('title', v); }
+
+  get text() { return this.getAttribute('text') ?? ''; }
+  set text(v) { this.setAttribute('text', v); }
+
+  _apply() {
+    // Title
+    if (this._titleEl) {
+      if (this.title.trim() === '') {
+        this._titleEl.style.display = 'none';
+      } else {
+        this._titleEl.style.display = '';
+        this._titleEl.textContent = this.title;
+      }
+    }
+
+    // Text
+    if (this._textEl) {
+      if (this.text.trim() === '') {
+        this._textEl.style.display = 'none';
+      } else {
+        this._textEl.style.display = '';
+        this._textEl.textContent = this.text;
+      }
+    }
+  }
+}
+
+customElements.define('x-section-header', XSectionHeader);
+
+
+// FOOTER
 class FooterMain extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
