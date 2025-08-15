@@ -15,7 +15,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // COMPONENTS
 
-// HEADER
+// MAIN HEADER WITH NAV
+// MAIN HEADER WITH NAV
+class HeaderNav extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    // Get attributes (with fallback defaults)
+    const dotColor = this.getAttribute("dot-color") || "var(--ridemetric)";
+    const navText = this.getAttribute("nav-text") || "Projekty";
+
+    this.innerHTML = `
+      <header class="header-main">
+        <a href="index.html">
+          <h2 class="H3-regular">
+            SZYMON FISCHER<span style="color: ${dotColor};">.</span>
+          </h2>
+        </a>
+        <nav class="nav-main">
+          <a href="index.html">
+            <h2 class="H3-regular hover-color nav-desktop">${navText}</h2>
+            <img src="assets/icons/close.svg" alt="Close" class="nav-mobile" style="opacity: 0.7;">
+          </a>
+        </nav>
+      </header>
+    `;
+  }
+}
+
+customElements.define("header-nav", HeaderNav);
+
+
+// SECTION HEADER
 class XSectionHeader extends HTMLElement {
   static get observedAttributes() { return ['title', 'text']; }
 

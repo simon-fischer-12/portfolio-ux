@@ -261,6 +261,16 @@ a:link {
   -webkit-tap-highlight-color: transparent;
 }
 
+body::-moz-selection {
+  background: #8314FF;
+  color: white;
+}
+
+body::selection {
+  background: #8314FF;
+  color: white;
+}
+
 /* FORCE SCROLLBAR TO PREVENT LAYOUT SHIFT */
 html {
   overflow-y: scroll;
