@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // COMPONENTS
 
 // MAIN HEADER WITH NAV
-// MAIN HEADER WITH NAV
 class HeaderNav extends HTMLElement {
   constructor() {
     super();
