@@ -336,7 +336,7 @@ html {
 /* PROJECT INTRO */
 .project-intro {
   max-width: 702px;
-  margin-bottom: 24px;
+  margin-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Kontrapunkt Miki', sans-serif;
@@ -507,6 +507,58 @@ html {
 .nav-desktop {
   display: block;
 }
+
+/* NAV PROJECT DISPLAY TYPE */
+.nav-display-type-container {
+  width: 336px;
+  height: 80px;
+  border-radius: var(--radius-XL);
+  background-color: var(--overlay-light-80);
+  margin: 16px auto 64px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;  
+}
+
+/*
+  position: -webkit-sticky;
+  position: sticky;
+  top: 16px;
+  z-index: 10; */
+
+.btn-display-type {
+  width: 140px;
+  height: 54px;
+  border-radius: var(--radius-M);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-display-type.primary {
+  background-color: var(--neutral-500);
+}
+
+.btn-display-type.primary p {
+  color: white;
+  @extend .Body-L-medium;
+}
+
+.btn-display-type.secondary {
+  background-color: var(--neutral-50);
+}
+
+.btn-display-type.secondary:hover {
+  background-color: var(--neutral-100);
+}
+
+.btn-display-type.secondary p {
+  color: var(--neutral-800);
+  @extend .Body-L-medium;
+}
+
+
 
 @media screen and (max-width: 768px) {
   .nav-desktop {

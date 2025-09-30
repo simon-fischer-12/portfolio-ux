@@ -127,3 +127,8 @@ class FooterMain extends HTMLElement {
 
 customElements.define('footer-main', FooterMain);
 
+
+
+
+
+
