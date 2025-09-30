@@ -760,12 +760,12 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
 }
 
-img {
+.fade-in-media {
   opacity: 0;
   transition: opacity 0.3s ease-in;
 }
 
-img.is-loaded {
+.fade-in-media.is-loaded {
   opacity: 1;
 }
 
